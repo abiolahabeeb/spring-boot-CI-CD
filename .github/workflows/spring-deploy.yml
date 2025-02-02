@@ -37,4 +37,4 @@ jobs:
         run: echo "${{ secrets.ACCESS_TOKEN_DOCKERHUB }}" | docker login -u ${{ secrets.USER_DOCKERHUB }} --password-stdin # Login to DockerHub
 
       - name: Push Docker image to DockerHub
-        run: docker push ${{ secrets.USER_DOCKERHUB }}/spring-boot-CI-CD:latest
+        run: docker push ${{ secrets.USER_DOCKERHUB }}/spring-boot-ci-cd:latest
